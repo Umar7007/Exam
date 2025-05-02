@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Karla', sans-serif;
+    color: #2D2641;
+    background: #fff;
+    line-height: 1.6;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .header {
+    padding: 2rem 0;
+    background: #fff;
+  }
+  .logo {
+    height: 30px;
+  }
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  .nav a {
+    color: #2D2641;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+  }
+  .nav a:hover {
+    color: #8A6FD2;
+  }
+  .btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .btn-outline {
+    border: 2px solid #2D2641;
+    background: transparent;
+    color: #2D2641;
+  }
+  .btn-outline:hover {
+    background: #2D2641;
+    color: white;
+  }
+  .btn-light {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+  }
+  .btn-light:hover {
+    background: white;
+    color: #2D2641;
+  }
+  .btn-outline-light {
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+  }
+  .btn-outline-light:hover {
+    background: white;
+    color: #2D2641;
+  }
+  
+  .hero {
+    background: #2D2641;
+    padding: 80px 0;
+    color: white;
+  }
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  .hero-text {
+    flex: 1;
+  }
+  .hero-text h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+  }
+  .hero-image {
+    flex: 1;
+  }
+  .hero-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .different {
+    padding: 100px 0 60px;
+    text-align: center;
+  }
+  .different h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  .different img {
+    max-width: 80%;
+  }
+  
+  .how-we-work {
+    background-color: #2D2641;
+    padding: 60px 0;
+    text-align: center;
+    color: white;
+  }
+  .how-we-work h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'DM Serif Display', serif;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 60px 0;
+  }
+  .footer img {
+    width: 100%;
+  }
+  
+  @media (max-width: 1024px) {
+    .hero-content {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav {
+      display: none; 
+    }
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+    .hero-content {
+      gap: 20px;
+    }
+    .different img {
+      max-width: 90%;
+    }
+  }
+  
